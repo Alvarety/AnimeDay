@@ -1,0 +1,73 @@
+Configuracion inicial:
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+
+
+Comandos básicos:
+Inicializar un nuevo repositorio:
+git init
+
+Clonar un repositorio existente:
+git clone <url-del-repositorio>
+
+Agregar archivos al área de preparación (staging area):
+git add <archivo>
+git add .   # Para agregar todos los archivos
+
+Confirmar cambios (commit):
+git commit -m "Mensaje del commit"
+
+Ver el estado del repositorio:
+git status
+
+Ver el historial de commits:
+git log
+
+
+Trabajo con ramas (branches):
+Crear una nueva rama:
+git branch <nombre-de-la-rama>
+
+Cambiar a otra rama:
+git checkout <nombre-de-la-rama>
+
+Crear y cambiar a una nueva rama:
+git checkout -b <nombre-de-la-rama>
+
+Combinar una rama con la rama actual:
+git merge <nombre-de-la-rama>
+
+Eliminar una rama:
+git branch -d <nombre-de-la-rama>
+
+
+Trabajo con repositorios remotos:
+Agregar un repositorio remoto:
+git remote add origin <url-del-repositorio-remoto>
+
+Ver los repositorios remotos:
+git remote -v
+
+Enviar cambios al repositorio remoto:
+git push origin <nombre-de-la-rama>
+
+Obtener cambios del repositorio remoto:
+git pull origin <nombre-de-la-rama>
+
+Actualizar las referencias remotas:
+git fetch
+
+
+Otros comandos útiles:
+Ver las diferencias entre archivos:
+git diff
+
+Deshacer cambios en el área de preparación:
+git reset <archivo>
+git reset HEAD <archivo>
+
+Revertir un commit:
+git revert <hash-del-commit>
+
+Eliminar cambios locales no confirmados:
+git checkout -- <archivo>
